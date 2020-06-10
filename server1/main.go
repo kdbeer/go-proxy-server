@@ -17,7 +17,7 @@ type response struct {
 func main() {
 	http.HandleFunc("/", reverseProxyHandler)
 
-	log.Println("Starting proxt server on port", port)
+	log.Println("Starting proxy server on port", port)
 	if err := http.ListenAndServe(port, nil); err != nil {
 		panic(err)
 	}
