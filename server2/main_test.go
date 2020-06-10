@@ -7,7 +7,7 @@ type TC struct {
 	B      float64
 	Ops    string
 	Expect float64
-	ERROR  string
+	Error  string
 }
 
 func TestSuccessCase(t *testing.T) {
@@ -50,8 +50,8 @@ func TestCaseSouldError(t *testing.T) {
 					return
 				}
 
-				if err.Error() != tc.ERROR {
-					t.Errorf("expect error %s ebot got %s", tc.ERROR, err)
+				if err.Error() != tc.Error {
+					t.Errorf("expect error %s ebot got %s", tc.Error, err)
 				}
 			},
 		)
