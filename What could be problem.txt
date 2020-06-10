@@ -1,0 +1,6 @@
+- Given the current design, what could be a problem?
+
+1. I didn't handle big float calculation it should be error when Lots of decimals.
+
+2. It may cause bottlenecks proxy server.
+
