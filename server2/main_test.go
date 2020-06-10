@@ -36,7 +36,8 @@ func TestSuccessCase(t *testing.T) {
 
 func TestCaseSouldError(t *testing.T) {
 	tt := []TC{
-		TC{100, 0, "/calculator.div", 0, "cannot divide by zero"},
+		{100, 0, "/calculator.div", 0, "cannot divide by zero"},
+		{100, 10, "/calculator.not", 0, "invalid operation"},
 	}
 
 	for _, tc := range tt {
